@@ -33,4 +33,7 @@
       <pair source="c" header="h" />
     </extensions>
   </Objective-C-extensions>
+  <codeStyleSettings language="ObjectiveC">
+    <option name="BLANK_LINES_AFTER_IMPORTS" value="0" />
+  </codeStyleSettings>
 </code_scheme>
