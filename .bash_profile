@@ -1,7 +1,7 @@
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export ANDROID_HOME=/usr/local/android-sdk-macosx
-export ANDROID_NDK_HOME=/usr/local/android-ndk-r12b
+export ANDROID_NDK_HOME=/usr/local/android-ndk-r13b
 
 alias ll="ls -lhA"
 
