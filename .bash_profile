@@ -4,6 +4,7 @@ export ANDROID_HOME=/usr/local/android-sdk-macosx
 export ANDROID_NDK_HOME=/usr/local/android-ndk-r13b
 export JAVA_HOME=$(/usr/libexec/java_home)
 export BAZEL=/usr/local/bin/bazel
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME"
 
 alias ll="ls -lhA"
 
