@@ -1,10 +1,10 @@
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export ANDROID_HOME=/usr/local/android-sdk-macosx
-export ANDROID_NDK_HOME=/usr/local/android-ndk-r13b
+export ANDROID_NDK_HOME=/usr/local/android-ndk-r16
 export JAVA_HOME=$(/usr/libexec/java_home)
 export BAZEL=/usr/local/bin/bazel
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/26.0.1:$ANDROID_NDK_HOME"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/27.0.1:$ANDROID_NDK_HOME"
 
 alias ll="ls -lhA"
 
