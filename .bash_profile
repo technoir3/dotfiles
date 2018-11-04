@@ -1,6 +1,7 @@
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR=atom
+export COPYFILE_DISABLE=true
 export ANDROID_HOME=/usr/local/android-sdk-macosx
 export ANDROID_NDK_HOME=/usr/local/android-ndk-r18
 export JAVA_HOME=$(/usr/libexec/java_home)
