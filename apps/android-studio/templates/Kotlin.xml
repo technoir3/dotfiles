@@ -1,0 +1,14 @@
+<templateSet group="Kotlin">
+  <template name="vmb" value="@dagger.Binds&#10;@dagger.multibindings.IntoMap&#10;@dagger.multibindings.ClassKey($NAME$::class)&#10;fun bind$NAME$(impl: $NAME$): androidx.lifecycle.ViewModel" description="ViewModel binding" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="wb" value="@dagger.Binds&#10;@dagger.multibindings.IntoMap&#10;@dagger.multibindings.ClassKey($NAME$::class)&#10;fun bind$NAME$Factory(impl: $NAME$Factory): io.plastique.core.work.ListenableWorkerFactory" description="Worker binding" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+</templateSet>
