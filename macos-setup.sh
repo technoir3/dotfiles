@@ -19,7 +19,7 @@ brew install lorem
 brew install nano
 brew install python
 brew install rmtrash
-brew install wget
+brew install gnupg
 brew cask install xquartz
 
 brew install gradle
@@ -30,6 +30,7 @@ brew install exiftool
 brew install pidcat
 brew install bazel
 brew install cmake
+brew install graphviz
 brew cask install jd-gui
 
 brew install ffmpeg
