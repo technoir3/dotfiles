@@ -10,6 +10,10 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
 
+# Add taps
+brew tap homebrew/cask
+brew tap homebrew/cask-versions
+
 # Install Homebrew packages
 brew install mas
 brew install bat
@@ -33,21 +37,21 @@ brew install cmake
 brew install graphviz
 brew cask install jd-gui
 
+brew install imagemagick
 brew install ffmpeg
 brew install youtube-dl
 brew install mkvtoolnix
 brew cask install mkvtoolnix-app
 
 # Install OpenJDK
-brew tap adoptopenjdk/openjdk
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-brew cask install adoptopenjdk/openjdk/adoptopenjdk11
+brew cask install zulu8
+brew cask install zulu11
 
 # Install QuickLook Plugins
 brew cask install qlcolorcode quicklook-json qlstephen
 
 # Cleanup Homebrew files
-brew cleanup
+brew cleanup -s
 
 # Install apps
 mas install 443987910 # 1Password 6
