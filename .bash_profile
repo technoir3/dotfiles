@@ -4,10 +4,10 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR=atom
 export COPYFILE_DISABLE=true
 export ANDROID_HOME=/usr/local/android-sdk-macosx
-export ANDROID_NDK_HOME=/usr/local/android-ndk-r19
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export ANDROID_NDK_HOME=/usr/local/android-ndk-r20
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 export BAZEL=/usr/local/bin/bazel
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/28.0.3:$ANDROID_NDK_HOME"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/29.0.2:$ANDROID_NDK_HOME"
 
 alias ll="ls -lhA"
 
