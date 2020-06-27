@@ -3,15 +3,23 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR=atom
 export COPYFILE_DISABLE=true
-export ANDROID_HOME=/usr/local/android-sdk-macosx
-export ANDROID_NDK_HOME=/usr/local/android-ndk-r20
+export ANDROID_HOME=/opt/android-sdk-macosx
+export ANDROID_NDK_HOME=$ANDROID_HOME/ndk/21.3.6528147
 export JAVA_HOME=$(/usr/libexec/java_home -v 11)
-export BAZEL=/usr/local/bin/bazel
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/29.0.2:$ANDROID_NDK_HOME"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/2.1/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/30.0.0:$ANDROID_NDK_HOME"
 
 alias ll="ls -lhA"
+alias buildifier="buildifier -r ."
 
-source /usr/local/git/contrib/completion/git-completion.bash
-source /usr/local/git/contrib/completion/git-prompt.sh
+if type brew &>/dev/null; then
+  HOMEBREW_PREFIX="$(brew --prefix)"
+  if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
+    source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+  else
+    for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
+      [[ -r "$COMPLETION" ]] && source "$COMPLETION"
+    done
+  fi
+fi
 
 export PS1='\[\033[38;5;76m\]\u@\h\[\033[0m\]:\[\033[38;5;39m\]\w\[\033[38;5;207m\]$(__git_ps1) \[\033[0m\]\$ '
