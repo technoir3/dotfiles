@@ -9,7 +9,6 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 export PATH="$PATH:$ANDROID_HOME/cmdline-tools/2.1/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/30.0.0:$ANDROID_NDK_HOME"
 
 alias ll="ls -lhA"
-alias buildifier="buildifier -r ."
 
 if type brew &>/dev/null; then
   HOMEBREW_PREFIX="$(brew --prefix)"
