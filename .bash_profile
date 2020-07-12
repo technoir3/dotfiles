@@ -22,3 +22,5 @@ if type brew &>/dev/null; then
 fi
 
 export PS1='\[\033[38;5;76m\]\u@\h\[\033[0m\]:\[\033[38;5;39m\]\w\[\033[38;5;207m\]$(__git_ps1) \[\033[0m\]\$ '
+
+source "/opt/vulkan-sdk/setup-env.sh"
